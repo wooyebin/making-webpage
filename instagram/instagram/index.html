@@ -1,0 +1,70 @@
+<!--톱니바퀴->모드->emmet으로 설정 후 !tab-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--style tab-->
+    <style>
+        .con{
+            width: 600px;
+            height: 920px;
+            background-color: #ffffff;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            
+        }
+        .img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .title{
+            display:flex; /* 가로로 정렬 */
+            margin: 10px;
+        }
+        /* p태그만 적용*/
+        .title p{
+            margin: 5px 15px; /* 4개 : 위 오 밑 왼, 2개 : 위아래 오왼*/
+            font-size: 26px;
+        }
+        .con_img{
+            width: 600px; /* width나 height 중 하나만 설정하면 비율 맞게 알아서 해줌 */
+        }
+        .content{
+            padding: 10px;
+        }
+        .content input{
+            width: 100%;
+            height: 45px;
+            border: none;
+            border-top: 1px solid #dbdbdb; /*위에선만*/
+            color: #999999;
+            font-size: 16px;
+        }
+        .content input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.con tab-->
+    <div class="con">
+        <!--div.title tab-->
+        <div class="title">
+            <img src="./images/Haedal.png" alt="" class="img">
+            <p>
+                HAEDALstagram
+            </p>
+        </div>
+        <img src="./images/picture.png" alt="" class="con_img">
+        <div class="content">
+            <p><a href="https://www.naver.com/">username</a> #해달최고 #이번엔이번이다 #다빈이답이다</p>
+            <input type="text" placeholder="댓글달기"> <!-- value는 글씨 쓰이는거 placeholder는 글씨쓰면 지워짐-->
+        </div>
+    
+        
+    </div>
+</body>
+</html>
